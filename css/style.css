@@ -310,12 +310,13 @@ i:hover {
 }
 
 #work {
-  /*margin-top: 7%;*/
+  margin-top: 500px;
   padding-bottom: 20px;
 }
 
 h2#workTitle {
   margin-bottom: 4%;
+  margin-top: 10%;
 }
 
 #eChartzContent p, #oddjobsContent p, #mappinContent p {
@@ -584,8 +585,8 @@ footer #socialMedia {
     transform: translateX(-50%) translateY(-300%);
   }
 
-  h2#workTitle {
-
+  #work {
+    margin-top: 0;
   }
 
   #eChartzContent {
@@ -726,7 +727,7 @@ footer #socialMedia {
 }
 
 #salman>p {
-  margin-top: 80px;
+  margin-top: 55px;
 }
 
 #kenan>p {
