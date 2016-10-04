@@ -120,6 +120,14 @@ html, body {
   border: 0px;
 }
 
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
   background-color: transparent;
   color: #FFFFFF;
@@ -540,6 +548,14 @@ footer #socialMedia {
 
 /* RESPONSIVE STYLING */
 @media only screen and (max-device-width: 768px) {
+  #background {
+    display: none;
+  }
+
+  #tag {
+    display: none;
+  }
+
   .navbar-toggle.collapsed {
     border: 0px;
   }

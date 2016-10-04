@@ -31,13 +31,17 @@ function logoScrollToTop() {
 }
 
 function navbarColourChange() {
-  $(window).scroll(function() {
-    if ($(document).scrollTop() > 200) {
-      $(".navbar-default").css("background-color", "#3E454C");
-    } else {
-      $(".navbar-default").css("background-color", "transparent");
-    }
-  });
+  if (screen.width < 768) {
+    $(".navbar-default").css("background-color", "#3E454C");
+  } else {
+    $(window).scroll(function() {
+      if ($(document).scrollTop() > 200) {
+        $(".navbar-default").css("background-color", "#3E454C");
+      } else {
+        $(".navbar-default").css("background-color", "transparent");
+      }
+    });
+  }
 }
 
 function buttonToAbout() {
@@ -68,10 +72,6 @@ $(document).ready(function() {
 });
 
 $(window).load(function() {
-});
-
-$(window).resize(function() {
-
 });
 
 $(window).scroll(function() {
