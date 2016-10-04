@@ -247,11 +247,13 @@ div h4 {
 #serviceContent {
   font-family: "Brandon Grotesque";
   font-size: 15px;
+  text-align: center;
 }
 
 div#team {
   padding-top: 6%;
   font-family: "Brandon Grotesque";
+  padding-bottom: 6%;
 }
 
 div#salmanImg {
@@ -308,7 +310,7 @@ i:hover {
 }
 
 #work {
-  padding-top: 7%;
+  /*margin-top: 7%;*/
   padding-bottom: 20px;
 }
 
@@ -547,7 +549,17 @@ footer #socialMedia {
 }
 
 /* RESPONSIVE STYLING */
-@media only screen and (max-device-width: 768px) {
+@media screen and (max-width: 992px) {
+  #profile-image {
+    width: 200px;
+  }
+
+  .imgDescription {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   #background {
     display: none;
   }
@@ -561,7 +573,7 @@ footer #socialMedia {
   }
 
   .navbar-brand>img {
-    margin-top: -28px;
+    margin-top: -25px;
   }
 
   #backgroundText {
@@ -570,6 +582,10 @@ footer #socialMedia {
 
   #background button {
     transform: translateX(-50%) translateY(-300%);
+  }
+
+  h2#workTitle {
+
   }
 
   #eChartzContent {
@@ -613,7 +629,7 @@ footer #socialMedia {
   }
 }
 
-@media only screen and (max-device-width: 480px) {
+@media screen and (max-width: 480px) {
 
   .navbar-brand>img {
     width: 125px;
@@ -650,25 +666,25 @@ footer #socialMedia {
   }
 }
 
-@media only screen and (max-device-width: 412px) {
+@media screen and (max-width: 412px) {
   #background p {
     transform: translateX(-50%) translateY(-850%);
   }
 }
 
-@media only screen and (max-device-width: 375px) {
+@media screen and (max-width: 375px) {
   #background p {
     transform: translateX(-50%) translateY(-1000%);
   }
 }
 
-@media only screen and (max-device-width: 360px) {
+@media screen and (max-width: 360px) {
   #background p {
     transform: translateX(-50%) translateY(-800%);
   }
 }
 
-@media only screen and (max-device-width: 320px) {
+@media screen and (max-width: 320px) {
   #background p {
     transform: translateX(-50%) translateY(-700%);
   }

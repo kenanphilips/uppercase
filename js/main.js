@@ -31,7 +31,7 @@ function logoScrollToTop() {
 }
 
 function navbarColourChange() {
-  if (screen.width < 768) {
+  if (screen.width < 800) {
     $(".navbar-default").css("background-color", "#3E454C");
   } else {
     $(window).scroll(function() {
