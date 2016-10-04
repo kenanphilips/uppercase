@@ -157,7 +157,12 @@ $(document).ready(function() {
     })
   .on('success.form.bv', function(e) {
     $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
-    $("#contactForm")[0].reset();
+    var modifiedData = {  email:    $('#email').val(),
+                         message:  $('#message').val(),
+                         name:     $('#name').val(),
+                         phone:    $('#phone').val()
+                       };
+   setTimeout($("#contactForm")[0].reset(),0);
     //   $('#contactForm').data('bootstrapValidator').resetForm();
     //
     // // Prevent form submission
@@ -177,11 +182,7 @@ $(document).ready(function() {
     $.ajax({
        url: BASE_URL + '/email',
        type: 'POST',
-       data: { email:    $('#email').val(),
-               message:  $('#message').val(),
-               name:     $('#name').val(),
-               phone:    $('#phone').val()
-             },
+       data: modifiedData,
        success: function(data){
          // prompt pop-up success message here
          console.log(data);
