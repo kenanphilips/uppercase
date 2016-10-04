@@ -157,6 +157,7 @@ $(document).ready(function() {
     })
   .on('success.form.bv', function(e) {
     $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
+    $("#contactForm")[0].reset();
     //   $('#contactForm').data('bootstrapValidator').resetForm();
     //
     // // Prevent form submission
@@ -183,7 +184,6 @@ $(document).ready(function() {
              },
        success: function(data){
          // prompt pop-up success message here
-         $("#contactForm")[0].reset();
          console.log(data);
        },
        error: function(error){
