@@ -23,25 +23,25 @@ function scrollSpy() {
   });
 }
 
-function logoScrollToTop() {
-  $('.navbar-brand').click(function(){
-    $('html, body').animate({scrollTop : 0},1200);
-    return false;
-  });
-}
-
 function navbarColourChange() {
-  if (screen.width < 800) {
-    $(".navbar-default").css("background-color", "#3E454C");
-  } else {
+  // if (screen.width < 800) {
+  //   $(".navbar-default").css("background-color", "#3E454C");
+  // } else {
     $(window).scroll(function() {
-      if ($(document).scrollTop() > 200) {
+      if ($(document).scrollTop() > 150) {
         $(".navbar-default").css("background-color", "#3E454C");
       } else {
         $(".navbar-default").css("background-color", "transparent");
       }
     });
-  }
+  // }
+}
+
+function logoScrollToTop() {
+  $('.navbar-brand').click(function(){
+    $('html, body').animate({scrollTop : 0},1200);
+    return false;
+  });
 }
 
 function buttonToAbout() {
